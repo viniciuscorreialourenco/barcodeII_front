@@ -1,2 +1,11 @@
-/* This is a CSS file */
-
+h1{
+  text-align: center;
+  color: white;
+}
+body{
+     background-image: url('../imagens/Walp1.jpg');
+}
+input{
+  margin-bottom: 3%;
+  background-color: transparent;
+}
