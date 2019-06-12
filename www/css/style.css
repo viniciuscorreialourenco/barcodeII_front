@@ -46,3 +46,12 @@ body{
      background-image: url('../imagens/Walp1.jpg');
     
 }
+#scanear{
+     margin-left: auto;
+     margin-right: auto;
+     background-color:rgba(207, 157, 0, 0.7);
+     border-radius: 15px;
+     color: white;
+     font-size: 20px;
+     margin-top: 15px;
+}
