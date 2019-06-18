@@ -11,19 +11,19 @@ input{
   border-radius: none;
   border-bottom: 10px solid black;
 }
-#ab{
+#create{
  background-color: rgba(207, 157, 0, 0.8);
  width: 120%;
 }
-#ac{
+#read{
  background-color: rgba(91, 191, 11, 0.8);
  width: 120%;
 }
-#aa{
+#delete{
  background-color: rgba(255, 31, 11, 0.8);
  width: 100%;
 }
-#ae{
+#update{
  background-color: rgba(91, 153, 255, 0.8);
  width: 100%;
 }
