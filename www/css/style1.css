@@ -4,28 +4,19 @@ h1{
 }
 body{
      background-image: url('../imagens/Walp1.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 input{
   margin-bottom: 3%;
-  background: transparent;
-  border-radius: none;
-  border-bottom: 10px solid black;
 }
 #create{
- background-color: rgba(207, 157, 0, 0.8);
- width: 120%;
+ background-color: rgba(91, 191, 11, 0.8);
+ color: white;
 }
 #read{
- background-color: rgba(91, 191, 11, 0.8);
- width: 120%;
-}
-#delete{
- background-color: rgba(255, 31, 11, 0.8);
- width: 100%;
-}
-#update{
- background-color: rgba(91, 153, 255, 0.8);
- width: 100%;
+ background-color: rgba(207, 157, 0, 0.8);
+ color: white;
 }
 .btn{
   font-size: 16px;
@@ -33,4 +24,13 @@ input{
 }
 select{
      margin-bottom: 3%;
+}
+.botoes{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 10px;
+}
+.corpo{
+     margin-left: auto;
+     margin-right: auto;
 }
