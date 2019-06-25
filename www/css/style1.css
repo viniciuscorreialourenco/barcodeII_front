@@ -34,3 +34,7 @@ select{
      margin-left: auto;
      margin-right: auto;
 }
+#voltar{
+   background-color: rgba(255,102,204,0.8);
+   color: white;
+}
