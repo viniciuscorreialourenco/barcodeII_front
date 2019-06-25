@@ -41,3 +41,10 @@ $(document).on("click", "#create", function(){
      });
 });
 
+$(document).on("click", "#voltar", function(){
+       location.href="index.html";
+});
+
+
+
+

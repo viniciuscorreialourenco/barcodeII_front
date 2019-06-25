@@ -56,3 +56,12 @@ body{
      font-size: 20px;
      margin-top: 15px;
 }
+#editar{
+      margin-left: auto;
+     margin-right: auto;
+     background-color:rgba(102,255,153,0.6);
+     border-radius: 15px;
+     color: white;
+     font-size: 20px;
+     margin-top: 15px;
+}
