@@ -8,6 +8,7 @@
                          
           <link rel="stylesheet" href="components/loader.css">
           <link rel="stylesheet" href="css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
           <link rel="stylesheet" href="css/style1.css">
      </head>
      <body>
@@ -17,79 +18,79 @@
                         <h1>Cadastro</h1>
                    </div>
                </div>
-               <div class="row">
+               <div class="row corpo">
+                    <div class="col-xs-12">
+                         <div class="row">
+                              <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="nome do produto" id="nome">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="cod. de barras" id="codigoBarra">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="valor" id="valor">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="desc.geral" id="descGeral">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="processador" id="processador">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                 <input type="text" class="form-control" placeholder="sistema operacional" id="sistOperacional">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="tela" id="tela">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                 <input type="text" class="form-control" placeholder="wifi" id="wifi"> 
+                              </div>
+                         </div>                    
+                         <div class="row">
+                               <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="quant. de cameras" id="qtdCamera">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="resolução da camera" id="resolucaoCamera">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-xs-12">
+                                   <input type="text" class="form-control" placeholder="memoria flash" id="memoriaFlash">
+                              </div>
+                         </div>
+                    </div>
+               <div class="row botoes">
                    <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="nome do produto">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="cod. de barras">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="valor">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="desc.geral">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="processador">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="sistema operacional">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="tela">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <select class="form-control">
-                              <option value="valor1" selected disabled>wifi</option> 
-                              <option value="valor2">sim</option>
-                              <option value="valor3">nao</option>
-                        </select>
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="quant. de cameras">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="resolução da camera">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-12">
-                        <input type="text" class="form-control" placeholder="memoria flash">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-xs-3">
                         <button class="btn btn-block" id="create">Salvar</button>
                    </div>
-                   <div class="col-xs-3">
-                        <button class="btn btn-block" id="read">Listar</button>
+               </div> 
+               <div class="row botoes">
+                   <div class="col-xs-12">
+                        <button class="btn btn-block" id="qrcode">scanear codigo</button>
                    </div>
-                   <div class="col-xs-3">
-                        <button class="btn btn-block" id="update">Editar</button>
+               </div> 
+               <div class="row botoes">
+                   <div class="col-xs-12">
+                        <button class="btn btn-block" id="voltar">Voltar</button>
                    </div>
-                   <div class="col-xs-3">
-                        <button class="btn btn-block" id="delete">Deletar</button>
-                   </div>
-               </div>              
+               </div>             
           </div>
      </body>
 </html>
