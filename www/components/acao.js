@@ -39,46 +39,37 @@ $(document).on("click", "#create", function(){
      });
 });
 
-$(document).on("click","#deleta",function(){
-   $.ajax({
-        type:"get", // como enviar
-        url:"https://barcode2-luizamaro11.c9users.io/webservice/delete.php",
-        data:"id = "+$("#codigoBarra").val(data),
-        // se der certo 
-        success: function(data){
-             navigator.notification.alert(data);
-             location.reload();// recarrega a pagina
-        },
-        // se der errado
-        erro: function(data){
-             navigator.notification.alert(data);
-        }
-   });
-});
-
-$(document).on("click", "#voltar", function(){
-       location.href="index.html";
-});
-
 $(document).on("click", "#qrcode", function(){
-          window.plugins.barcodeScanner.scan( function(result) {
-               $("#codigoBarra").val(result.text);
-          }, function(error) {
+     window.plugins.barcodeScanner.scan(function(result){
+          $("#codigoBarra").val(result.text);
+     },
+          function(error) {
                alert("Scanning failed: " + error);
           }
-          );
+     );
 });
 
-function scanBarcode(){
-        window.plugins.barcodeScanner.scan(function(result){
-            window.location.href="lista.html"; 
-            var codigoescolhido = result.text;
-            $.ajax({
+$(document).on("click", "#scanear", function(){
+     window.plugins.barcodeScanner.scan(function(result){
+             
+          var codigoBarra = result.text;
+          $.ajax({
                type: "get",
-               url: "https://barcode2-luizamaro11.c9users.io/webservice/lista_um.php",
-               data:"id = "+codigoescolhido,
+               url: "https://barcode2-luizamaro11.c9users.io/webservice/listar_um.php",
+               data:"id="+codigoBarra,
                dataType: "json",
-               success: function(data){              
+               success: function(data){
+                    $("#codigoBarra").val("");
+                    $("#nome").val("");
+                    $("#valor").val("");
+                    $("#descGeral").val("");
+                    $("#processador").val("");
+                    $("#sistOperacional").val("");
+                    $("#tela").val("");
+                    $("#wifi").val("");
+                    $("#qtdCamera").val("");
+                    $("#resolucaoCamera").val("");
+                    $("#memoriaFlash").val("");                                           
                     $("#codigoBarra").val(data.celular.codigo);
                     $("#nome").val(data.celular.nome);
                     $("#valor").val(data.celular.valor);
@@ -88,18 +79,36 @@ function scanBarcode(){
                     $("#tela").val(data.celular.tela);
                     $("#wifi").val(data.celular.wifi);
                     $("#qtdCamera").val(data.celular.qtdCamera);
-                    $("#ResolucaoCamera").val(data.celular.resolucao);
+                    $("#resolucaoCamera").val(data.celular.resolucao);
                     $("#memoriaFlash").val(data.celular.memoriaFlash);
                },
                error: function(data){
                     navigator.notification.alert(data);
                }
-            });            
-            }, function(error) {
+          });            
+     }, 
+            function(error) {
                 alert("Scanning failed: " + error);
             }
-        );
-}
+     );
+});
+
+$(document).on("click", "#deleta", function(){
+     $.ajax({
+          type:"get", // como enviar
+          url:"https://barcode2-luizamaro11.c9users.io/webservice/delete.php",
+          data:"id = "+$("#codigoBarra").val(data),
+          // se der certo 
+          success: function(data){
+               navigator.notification.alert(data);
+               location.reload();// recarrega a pagina
+          },
+          // se der errado
+          erro: function(data){
+               navigator.notification.alert(data);
+          }
+     });
+});
 
 
 
